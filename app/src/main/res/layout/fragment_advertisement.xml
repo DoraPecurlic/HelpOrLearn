@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/enterDataTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="20dp"
+            android:text="@string/enterDataTextView"
+            android:textColor="@color/dark_blue"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/dataLayout"
+           />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/layout_round_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/enterDataTextView">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="22dp"
+                app:layout_constraintBottom_toTopOf="@+id/TextInputLayoutSurname"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/editTextName"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutSurname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="22dp"
+
+
+                app:layout_constraintBottom_toTopOf="@+id/TextInputLayoutDescription"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutName"
+                app:startIconDrawable="@drawable/ic_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextSurname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/editTextSurname"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutDescription"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="22dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/TextInputLayoutPhoneNumber"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutSurname"
+                app:startIconDrawable="@drawable/ic_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:hint="@string/editTextDescription"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutPhoneNumber"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="22dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/TextInputLayoutSubject"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutDescription"
+                app:startIconDrawable="@drawable/ic_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/editTextPhoneNumber"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutSubject"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintBottom_toTopOf="@id/addButton"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TextInputLayoutPhoneNumber"
+                app:startIconDrawable="@drawable/ic_book">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/editTextSubject"
+                     />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+
+                android:id="@+id/addButton"
+
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginBottom="30dp"
+
+
+                android:backgroundTint="@color/dark_blue"
+                android:text="@string/addButton"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/logOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dataLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="30dp"
+
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue"
+            android:text="@string/logOut" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

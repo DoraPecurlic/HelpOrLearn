@@ -7,5 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="theme">#156A63</color>
+
+
+    <color name="blueblack">#111f28</color>
+    <color name="tanAccent">#E6DACB</color>
+    <color name="gray">#9EACAA</color>
+    <color name="mint_gray">#B1BCBE </color>
+    <color name="blue">#E8F0FD</color>
+    <color name="green_blue">#699395</color>
+    <color name="orange">#F0C381</color>
+    <color name="dark_grey">#6D706F</color>
+    <color name="dark_blue">#18427A</color>
+
+
+        
 </resources>

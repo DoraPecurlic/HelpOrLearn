@@ -1,19 +1,16 @@
 <resources>
     <string name="app_name">HelpOrLearn</string>
-    <string name="instructorButton">INSTRUCTOR</string>
-    <string name="studentButton">STUDENT</string>
-
 
     <!--list_item fragment -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="enterDataTextView">Personal info </string>
     <string name="editTextName">Name</string>
     <string name="editTextSurname">Surname</string>
-    <string name="editTextEmail">Email</string>
+    <string name="editTextDescription">About you</string>
     <string name="editTextPhoneNumber">Number</string>
     <string name="editTextSubject">Subject</string>
-    <string name="addButton">Register </string>
-    <string name="nextButton">Next</string>
+    <string name="addButton">Publish </string>
+    <string name="logOut">Log Out</string>
 
     <!--recyclerview -->
     <string name="searchButton">Search</string>
@@ -23,7 +20,14 @@
     <string name="textViewNumber">Number: </string>
     <string name="textViewSubject">Subject: </string>
 
-
+    <!-- Log in -->
+    <string name="logEmail">Email</string>
+    <string name="logPassword">Password</string>
+    <string name="loginButton">LOGIN</string>
+    <string name="signup">Don\'t have an account? Sign Up!</string>
+    <string name="signupButton">Sign up</string>
+    <string name="loginRedirectText">Already an user? Login</string>
+    <string name="createAccount">Please create account</string>
 
 
 </resources>
